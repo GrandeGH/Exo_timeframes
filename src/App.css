@@ -1,0 +1,13 @@
+* {
+  /* outline: red 1px solid; */
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: navy;
+}

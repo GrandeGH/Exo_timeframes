@@ -1,0 +1,16 @@
+.imgJeremy {
+    width: 70px;
+    height: 70px;
+    background-image: url(/public/image-jeremy.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: white 5px solid;
+    border-radius: 50%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 3px;
+}
