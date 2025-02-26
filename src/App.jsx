@@ -15,6 +15,7 @@ function App() {
   const [data, setData] = useState([]);
   const [periode, setPeriode] = useState('weekly');
   const images = [Work, Play, Study, Exercice, Social, SelfCare];
+  const colors = ["#FF8C66", "#56C2E6", "#FF5C7C", "#4BCF82", "#7335D2", "#F1C75B"];
 
   useEffect(() => {
     fetch('src/assets/data.json')
@@ -51,10 +52,11 @@ function App() {
               <div key={i} className="col-12 col-md-6 col-lg-4">
                 <Card
                   imagesCard={images[i]}
-                  titre={activité.title}
+                  titre={activité.titre}
                   current={activité.timeframes[periode].current}
                   previous={activité.timeframes[periode].previous}
                   textePeriode={getTextePeriode()}
+                  bgColor={colors[i]}
                 />
               </div>
             ))}
